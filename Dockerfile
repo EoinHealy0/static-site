@@ -4,7 +4,7 @@ COPY . .
 RUN hugo --minify
 
 FROM nginx:alpine-slim
-LABEL org.opencontainers.image.source="https://github.com/EoinHealy0/static-site"
+LABEL org.opencontainers.image.source="https://github.com/eoinhealy0/static-site"
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /src/public /usr/share/nginx/html
