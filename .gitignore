@@ -1,0 +1,58 @@
+# ---- Terraform ----
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+*.tfvars.json
+crash.log
+*.tfplan
+override.tf
+override.tf.json
+# Keep the lockfile tracked by default
+# .terraform.lock.hcl
+
+# ---- Hugo ----
+# Ignore generated site and built resources
+public/
+resources/
+resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+
+# Ignore Hugo cache and temp
+.hugo_cache/
+
+# ---- TOML (local/test configs) ----
+# Local or test TOML config files used for testing
+*.local.toml
+*.test.toml
+config.local.toml
+config.*.local.toml
+*.toml.local
+
+# Optional: Node and Python artifacts
+node_modules/
+.venv/
+
+# ---- Docker ----
+# Docker ignore patterns: local images, compose overrides, and build artifacts
+# Docker Compose env and override files
+.env
+docker-compose.override.yml
+docker-compose.*.local.yml
+
+# Docker build artifacts and image archives
+*.tar
+*.tar.gz
+*.tgz
+docker-image-*.tar
+
+# Docker Desktop / BuildKit and control files
+docker-compose.yml.local
+/.docker/
+
+# Local volumes, containers and runtime files (not tracked)
+/var/lib/docker/
+

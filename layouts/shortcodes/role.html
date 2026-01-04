@@ -1,0 +1,14 @@
+<div class="ml-2 md:ml-4 mb-4 border-l-2 border-neutral-300 dark:border-neutral-600 pl-4">
+  
+  <div class="flex flex-col md:flex-row justify-between items-baseline mb-1">
+    <h4 class="text-neutral-900 dark:text-neutral-100 m-0">{{ .Get "title" }}</h4>
+    <span class="text-sm text-neutral-600 dark:text-neutral-400 font-mono">{{ .Get "date" }}</span>
+  </div>
+
+<div class="flex-1 mb-4">
+    <div class="[&_h3]:text-base [&_h3]:font-bold [&_h3]:mb-1 [&_h3]:mt-0 [&_ul]:!pl-0 [&_ul]:!m-0 [&_ul]:!p-0 [&_ul]:!space-y-0 [&_li]:!mb-0 [&_li]:!mt-0 [&_li]:leading-tight [&_p]:!m-0 text-sm">
+        {{ .Inner | markdownify }}
+    </div>
+</div>
+
+</div>

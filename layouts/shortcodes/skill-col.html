@@ -1,0 +1,17 @@
+<div class="flex-1 min-w-0 not-prose h-full">
+    <div class="h-full py-7 px-3 border-solid border-neutral-300 dark:border-neutral-600 
+                bg-gradient-to-b from-white to-neutral-50/50 
+                dark:from-neutral-800 dark:to-neutral-900/50 
+                shadow-sm"
+         style="border-width: 5px; border-radius: 20px">
+        
+        <h3 class="text-m font-bold mb-5 font-bold text-neutral-900 dark:text-neutral-100 uppercase tracking-[0.2em] text-center">
+            {{ .Get "title" }}
+        </h3>
+        
+        <div class="grid grid-cols-3 gap-2 w-full overflow-hidden">
+            {{ .Inner }}
+        </div>
+        
+    </div>
+</div>

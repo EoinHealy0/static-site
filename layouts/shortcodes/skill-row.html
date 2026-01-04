@@ -1,0 +1,14 @@
+<div class="skill-grid-container" 
+     style="display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; width: 100%; align-items: stretch;">
+    {{ .Inner }}
+</div>
+
+<style>
+  /* This CSS ensures that if Hugo puts a <p> tag in there, it doesn't break the layout */
+  .skill-grid-container > p { display: contents; }
+  
+  /* Responsive: Stack on mobile (1 column), Row on desktop (3 columns) */
+  @media (max-width: 768px) {
+    .skill-grid-container { grid-template-columns: 1fr !important; }
+  }
+</style>
