@@ -1,15 +1,13 @@
-<div class="mb-6">
-  <div class="flex flex-col md:flex-row justify-between items-baseline border-b border-neutral-200 dark:border-neutral-700 pb-2">
-    <div class="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3">
-       <h3 class="text-lg font-bold m-0 text-neutral-900 dark:text-neutral-100">
-         {{ .Get "university" }}
-       </h3>
-       <span class="text-md text-neutral-600 dark:text-neutral-400">
-         {{ .Get "degree" }}
-       </span>
-    </div>
-    <span class="mt-1 md:mt-0 text-sm font-mono text-neutral-500 dark:text-neutral-500">
-      {{ .Get "date" }}
-    </span>
+<div class="flex flex-col md:flex-row justify-between items-baseline border-b border-neutral-200 dark:border-neutral-700 pb-2">
+  <div class="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3">
+      <span class="font-bold m-0 text-neutral-900 dark:text-neutral-100 text-lg">
+        {{ .Get "university" }}
+      </span>
+      <span class="text-md text-neutral-600 dark:text-neutral-400">
+        {{ .Get "degree" }}
+      </span>
   </div>
+  <span class="mt-1 md:mt-0 text-sm font-mono text-neutral-500 dark:text-neutral-500">
+    {{ .Get "date" }}
+  </span>
 </div>
