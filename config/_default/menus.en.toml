@@ -13,6 +13,7 @@
   name = "Home"
   url = "/"
   weight = 10
+
 [[main]]
   name = "CV"
   pageRef = "cv"
