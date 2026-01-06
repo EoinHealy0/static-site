@@ -1,13 +1,9 @@
-<div class="mb-8">
-  <div class="flex flex-col md:flex-row justify-between items-baseline border-b border-neutral-200 dark:border-neutral-700 pb-3 mb-4">
-    <div class="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3">
-       <h3 class="m-0 text-neutral-900 dark:text-neutral-100">{{ .Get "name" }}</h3>
-       <span class="text-sm text-neutral-600 dark:text-neutral-400">{{ .Get "location" }}</span>
-    </div>
-    <span class="mt-2 md:mt-0 text-sm text-neutral-600 dark:text-neutral-400 font-mono">
-      {{ .Get "date" }}
-    </span>
+<div class="flex flex-col md:flex-row items-baseline">
+  <div class="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3">
+      <span class="font-bold text-lg text-neutral-900 dark:text-neutral-100">{{ .Get "name" }}</span>
   </div>
-  
-  {{ .Inner }}
+  <span class="mt-2 md:mt-0 text-sm text-neutral-600 dark:text-neutral-400 font-mono">
+    {{ .Get "date" }}
+  </span>
+{{ .Inner }}
 </div>
