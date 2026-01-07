@@ -31,7 +31,7 @@ jobs:
       - name: Set image tag (lowercase owner)
         run: |
           OWNER_LOWER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          echo "IMAGE_TAG=ghcr.io/$OWNER_LOWER/my-site:latest" >> $GITHUB_ENV
+          echo "IMAGE_TAG=ghcr.io/$OWNER_LOWER/my-site:dev" >> $GITHUB_ENV
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
